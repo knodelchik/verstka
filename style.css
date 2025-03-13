@@ -3,39 +3,358 @@
     src: url('./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format("truetype");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* general */
+.support {
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
 body {
     font-family: Montserrat;
     font-size: 1em;
 }
+
+
 /* header */
 
-.logo {
-
+.header-container {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.125em;
+    padding: 2rem 2.5rem;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #FFFFFF;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    z-index: 3;
 }
 
-.menu-list {
+ul {
+    display: flex;
+}
 
+.logo {}
+
+.menu-list {
+    font-weight: 400;
+    font-size: 1rem;
+    align-items: center;
 }
 
 .menu-item {
-    
+    margin-left: 3.5rem;
+
+}
+
+.blue-button {
+    text-transform: uppercase;
+    background-color: rgba(122, 229, 253, 1);
+    padding: 1.3125rem 2.1875rem;
+    border-radius: 5.4275rem;
+    margin-left: 1.5rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+
+}
+
+.blue-button a {
+    text-decoration: none;
+    color: black;
 }
 
 /* first screen */
-.first-screen{
+.first-screen {
     width: 100%;
-    height: 50vh;
-    background-image: url(assets/images/hero.png) ;
+    height: 100vh;
+    background-image: url(assets/images/hero.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-screen-container {
+    display: grid;
+    gap: 1.875em;
+    margin-left: 6.56em;
+    width: 50%;
 }
 
 .main-title {
     font-weight: 800;
     font-size: 3.941875em;
+    color: #FFFFFF;
+    width: 60%;
+    line-height: 0.95;
 }
 
-.main-desription {
+.main-description {
+    width: 50%;
+}
 
+/* main */
+.block-img {
+    max-width: 40%;
+    border-radius: 0.7em;
+}
+
+.title-main {
+    font-weight: 400;
+    font-size: 3.75em;
+    margin-bottom: 0.4em;
+    line-height: 4.5rem;
+}
+
+.title-description {
+    font-weight: 400;
+    font-size: 1.6875em;
+    margin-bottom: 0.6em;
+}
+
+
+.blue-support {
+    color: rgba(115, 166, 177, 1);
+    ;
+}
+
+.desription-main {
+    font-weight: 400;
+    font-size: 2.875em;
+}
+
+.description-title {
+    padding: 10em 5.43em;
+    padding-top: 0;
+    text-align: center;
+}
+
+.description-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 13.75em 4.4375em;
+    align-items: center;
+}
+
+.description-block {
+    background-color: rgba(241, 253, 255, 1);
+    display: flex;
+    flex-direction: row;
+    padding: 3vh 3vw;
+    gap: 6em;
+    border-radius: 0.7em;
+}
+
+.description-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.up {
+    text-transform: uppercase;
+}
+
+.white-button {
+    border: none;
+    background-color: #FFFFFF;
+    max-width: 30%;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-left: 0;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.second-blue-button {
+    border: none;
+    max-width: 30vw;
+    font-family: Montserrat;
+}
+
+/* mission-section */
+
+.mission-section {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    background-color: #F1FDFF;
+    padding: 17vh 3vw;
+    margin: 20vh 4.5vw;
+    border-radius: 0.7em;
+    z-index: 0;
+}
+
+.mission-text {
+    max-width: 40vw;
+    background-color: rgba(241, 253, 255, 1);
+    font-size: 1.704375rem;
+}
+
+.mission-composition {
+    position: relative;
+}
+
+.composition-item {
+    position: absolute;
+}
+
+.first {
+    z-index: 1;
+    bottom: -14vh;
+    left: 39vw;
+}
+
+.second {
+    z-index: 2;
+    bottom: -17vh;
+    left: 47vw;
+}
+
+.mission-block-text {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+}
+
+/* Donate section */
+
+.donate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter {
+    display: flex;
+    font-size: 3.75rem;
+    margin-bottom: 3.125rem;
+}
+
+.donate-first-line {
+    margin-bottom: 1.4rem;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+}
+
+.donate-second-line {
+    margin-bottom: 3.125rem;
+    font-size: 1.25em;
+    color: rgba(115, 166, 177, 1);
+}
+
+.donate-third-line {
+    margin-bottom: 1.0625rem;
+    font-size: 1.6875em;
+}
+
+.donate-button {
+    margin-bottom: 10rem;
+}
+
+.donate-counter-divider {
+    border-left: solid 2px #9AD2DE;
+
+    margin: 0 0.3125rem;
+}
+
+/* Contacts */
+.contacts {
+    display: flex;
+    margin-bottom: 3.125rem;
+    padding-top: 3.125rem;
+}
+
+.contacts-title {
+    font-size: 3.75em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contacts-phone,
+.contacts-chat {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.contacts-icon {
+    width: 2.0625rem;
+}
+
+.contacts-phone-number {
+    font-weight: 700;
+}
+
+.contacts-left-block,
+.contacts-right-block {
+    flex: 1;
+}
+
+.contacts-center-block {
+    width: 5.9rem;
+}
+
+.contacts-phone-block,
+.contacts-chat-block {
+    width: 27.75rem;
+}
+
+.contacts-phone-block {
+    margin-bottom: 3.5625rem;
+}
+
+/*mailing */
+
+.mailing {
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 3.75rem;
+}
+
+.form-input {
+    box-sizing: border-box;
+    border-radius: 3.81rem;
+    border: none;
+    background-color: #F9FADF;
+    width: 100%;
+    height: 4.125rem;
+    padding-left: 2.68rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.93rem;
+    font-family: inherit;
+    color: black;
+}
+
+.mailing-title {
+    font-size: 1.68rem;
+    margin-bottom: 2.43rem;
+}
+
+.mailing-button {
+    width: 100%;
+    border: none;
+    margin-left: 0;
+    font-family: Montserrat;
+}
+
+footer {
+    padding: 0 4.4rem 10rem 4.4rem;
+    background-color: #F9FADF;
+}
+
+@media screen and (max-width:600px) {
+    .description-block {
+        flex-direction: column;
+    }
 }
